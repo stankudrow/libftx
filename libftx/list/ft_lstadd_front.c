@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 22:31:29 by stanislav         #+#    #+#             */
-/*   Updated: 2021/11/03 22:31:29 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/02/01 20:44:33 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "list.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
