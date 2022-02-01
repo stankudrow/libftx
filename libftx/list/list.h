@@ -6,11 +6,11 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 22:29:20 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 20:55:04 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/02/01 22:24:43 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef  LIST_H
+#ifndef LIST_H
 # define LIST_H
 
 # include "stdlib.h"

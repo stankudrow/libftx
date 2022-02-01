@@ -6,11 +6,11 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 22:29:20 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 20:13:04 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/02/01 22:24:25 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef  PUTTERS_H
+#ifndef PUTTERS_H
 # define PUTTERS_H
 
 # include <unistd.h>

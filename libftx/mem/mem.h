@@ -6,11 +6,11 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 23:46:03 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 22:00:53 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/02/01 22:24:36 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef  MEM_H
+#ifndef MEM_H
 # define MEM_H
 
 # include "stddef.h"

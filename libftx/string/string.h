@@ -6,12 +6,14 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 22:29:20 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 22:20:56 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/02/01 22:23:53 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRING_H
 # define STRING_H
+
+# include "stddef.h"
 
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);
