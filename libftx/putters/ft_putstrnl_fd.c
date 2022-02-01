@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putstrnl_fd.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:17:16 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 20:01:12 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/01 19:52:09 by stanislav         #+#    #+#             */
+/*   Updated: 2022/02/01 19:52:09 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "putters.h"
 
-void	ft_putnbr_fd(int fd, int nbr)
+void	ft_putstrnl_fd(int fd, const char *str)
 {
-	ft_putnbr_base_fd(fd, nbr, "0123456789");
+	ft_putstr_fd(fd, str);
+	ft_putstr_fd(fd, "\n");
 }

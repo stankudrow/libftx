@@ -6,11 +6,11 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 06:49:22 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/06 06:49:22 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/02/01 20:00:08 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "putters.h"
 
 void	ft_putchar_fd(int fd, char chr)
 {
