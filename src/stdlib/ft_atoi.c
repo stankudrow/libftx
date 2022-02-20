@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/12 01:00:42 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:07:01 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:47:45 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:47:45 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <limits.h>
-#include "ctype.h"
+#include "ft_ctype.h"
 
 static void	ft_skip(const char **nptr, char *sign)
 {
@@ -27,7 +27,7 @@ static void	ft_skip(const char **nptr, char *sign)
 		(*nptr)++;
 }
 
-// nbr is an always positive number while in the loop of ft_atoi
+// nbr is always a positive number while in the loop of ft_atoi
 static int	ft_isoverflow(long nbr, unsigned char digit, char sign)
 {
 	if (sign < 0)

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:11:25 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/02 20:59:10 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:57:30 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:57:31 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string.h"
+#include "ft_string.h"
 
 static int	ft_ismemoverflow(size_t len1, size_t len2)
 {

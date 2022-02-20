@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:42:20 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:24:57 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:16:56 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:17:00 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ctype.h"
+#include "ft_ctype.h"
 
 int	ft_isalpha(int c)
 {

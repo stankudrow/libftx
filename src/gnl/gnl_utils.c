@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   gnl_utils.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/07 12:49:21 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 19:33:19 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 13:06:46 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:06:47 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "ft_gnl.h"
 
 t_line	*gnl_init_line(void)
 {
@@ -74,23 +74,23 @@ void	gnl_push_char(t_line *to, char chr)
 		to->endl = true;
 }
 
-// realloc + memove (with memcpy)
-void	*gnl_remalloc(void *ptr, size_t old, size_t new)
+// realloc + memmove (with memcpy)
+void	*gnl_remalloc(void *ptr, size_t os, size_t ns)
 {
 	void			*newptr;
 	unsigned char	*dst;
 	unsigned char	*src;
 
-	newptr = malloc(new);
+	newptr = malloc(ns);
 	if (!(ptr && newptr))
 		return (newptr);
 	dst = newptr;
 	src = ptr;
 	if (src < dst)
-		while (old--)
-			dst[old] = src[old];
+		while (os--)
+			dst[os] = src[os];
 	if (src > dst)
-		while (old--)
+		while (os--)
 			*dst++ = *src++;
 	return (newptr);
 }

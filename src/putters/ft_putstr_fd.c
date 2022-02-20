@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/06 06:51:19 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 19:49:25 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 13:09:47 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:09:56 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "putters.h"
-#include "string.h"
+#include "ft_putters.h"
+#include "ft_string.h"
 
 void	ft_putstr_fd(int fd, const char *str)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:47:10 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:47:10 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:52:33 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:52:34 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mem.h"
+#include "ft_mem.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {

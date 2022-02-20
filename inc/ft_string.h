@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   str.h                                              :+:      :+:    :+:   */
+/*   ft_string.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:29:20 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:22:20 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:56:26 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:56:27 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STR_H
-# define STR_H
+#ifndef FT_STRING_H
+# define FT_STRING_H
 
-# include "stdl.h"
-# include "mem.h"
+# include "ft_stdlib.h"
+# include "ft_mem.h"
 
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);

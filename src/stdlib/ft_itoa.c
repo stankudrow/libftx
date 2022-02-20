@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:24:01 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:08:18 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:54:35 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:54:35 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mystdlib.h"
+#include "ft_stdlib.h"
 
 static short	ft_get_numsign(int nbr)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:43:27 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:43:27 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:18:02 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:18:03 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ctype.h"
+#include "ft_ctype.h"
 
 int	ft_tolower(int c)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ispunct.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:42:44 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:42:44 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:17:35 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:17:36 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ctype.h"
+#include "ft_ctype.h"
 
 int	ft_ispunct(int c)
 {

@@ -5,13 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:24:44 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:07:32 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 15:08:23 by stanislav         #+#    #+#             */
+/*   Updated: 2022/02/20 15:08:23 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdlib.h"
-#include "mem.h"
+#include "ft_stdlib.h"
+#include "ft_mem.h"
 
 // thanks to @jbelinda and @thera for insights
 void	*ft_calloc(size_t nmemb, size_t size)

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:43:34 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:43:34 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:18:15 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:18:15 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ctype.h"
+#include "ft_ctype.h"
 
 int	ft_toupper(int c)
 {

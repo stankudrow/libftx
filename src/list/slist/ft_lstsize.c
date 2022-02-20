@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:33:49 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 20:48:12 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:21:21 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:08:01 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "list.h"
+#include "ft_slist.h"
 
 int	ft_lstsize(t_list *lst)
 {

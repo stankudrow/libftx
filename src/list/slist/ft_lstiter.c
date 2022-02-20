@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:32:46 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 20:45:41 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:21:49 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:07:42 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "list.h"
+#include "ft_slist.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

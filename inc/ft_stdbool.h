@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stdl.h                                             :+:      :+:    :+:   */
+/*   ft_stdbool.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:29:20 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:21:58 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:36:47 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:44:50 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STDL_H
-# define STDL_H
+#ifndef FT_STDBOOL_H
+# define FT_STDBOOL_H
 
-# include <stddef.h> 
-# include <stdlib.h>
-
-int		ft_atoi(const char *nptr);
-
-void	*ft_calloc(size_t nmemb, size_t size);
-
-char	*ft_itoa(int n);
+typedef enum s_bool
+{
+	false,
+	true
+}	t_bool;
 
 #endif

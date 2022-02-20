@@ -6,16 +6,18 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 20:11:14 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:05:33 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/02/20 15:05:05 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ctype.h"
-#include "putters.h"
-#include "stdbool.h"
-#include "string.h"
+#include "ft_ctype.h"
+#include "ft_putters.h"
+#include "ft_stdbool.h"
+#include "ft_string.h"
 
-static bool	ft_is_valid_base(const char *base)
+#define LL long long int
+
+static t_bool	ft_contains_unique_chars(const char *base)
 {
 	size_t	blen;
 	size_t	bci;
@@ -41,7 +43,7 @@ static bool	ft_is_valid_base(const char *base)
 	return (true);
 }
 
-static void	ft_putnbr_nbase_fd(int fd, int nbr, const char *bset, int bnum)
+static void	ft_putnbr_nbase_fd(int fd, LL nbr, const char *bset, char bnum)
 {
 	if (nbr < 0)
 	{
@@ -58,8 +60,13 @@ static void	ft_putnbr_nbase_fd(int fd, int nbr, const char *bset, int bnum)
 	}
 }
 
-void	ft_putnbr_base_fd(int fd, int nbr, const char *base)
+void	ft_putnbr_base_fd(int fd, LL nbr, const char *base)
 {
-	if (ft_is_valid_base(base))
-		ft_putnbr_nbase_fd(fd, nbr, base, ft_strlen(base));
+	size_t	baselen;
+
+	baselen = ft_strlen(base);
+	if (baselen < 2 || baselen > 36)
+		return ;
+	if (ft_contains_unique_chars(base))
+		ft_putnbr_nbase_fd(fd, nbr, base, baselen);
 }

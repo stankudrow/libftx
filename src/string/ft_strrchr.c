@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:12:12 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/02 21:00:18 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:58:42 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:58:43 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string.h"
+#include "ft_string.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

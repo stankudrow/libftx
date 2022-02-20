@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/06 06:49:22 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 20:00:08 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 13:08:49 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:08:49 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "putters.h"
+#include "ft_putters.h"
 
 void	ft_putchar_fd(int fd, char chr)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:18:07 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:45:11 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:52:03 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:52:03 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mem.h"
+#include "ft_mem.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:32:00 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 20:44:56 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:22:04 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:07:32 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "list.h"
+#include "ft_slist.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

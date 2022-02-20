@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iscntrl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:41:49 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:41:50 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:17:17 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:17:18 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ctype.h"
+#include "ft_ctype.h"
 
 int	ft_iscntrl(int c)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:11:05 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/02 20:59:00 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:57:19 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:57:20 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string.h"
+#include "ft_string.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:46:44 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:46:44 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:52:12 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:52:13 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mem.h"
+#include "ft_mem.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

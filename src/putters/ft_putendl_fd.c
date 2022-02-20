@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/01 19:52:09 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/02 21:28:56 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 13:08:57 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:08:57 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "putters.h"
+#include "ft_putters.h"
 
 void	ft_putendl_fd(int fd, const char *str)
 {

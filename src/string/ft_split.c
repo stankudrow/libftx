@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:10:32 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/02 20:58:27 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:55:47 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:55:48 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string.h"
+#include "ft_string.h"
 
 static size_t	ft_count_words(const char *str, char sep)
 {

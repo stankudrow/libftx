@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ctype.h                                            :+:      :+:    :+:   */
+/*   ft_putters.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:40:54 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:26:55 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 15:05:25 by stanislav         #+#    #+#             */
+/*   Updated: 2022/02/20 15:05:36 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CTYPE_H
-# define CTYPE_H
+#ifndef FT_PUTTERS_H
+# define FT_PUTTERS_H
 
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isblank(int c);
-int	ft_iscntrl(int c);
-int	ft_isdigit(int c);
-int	ft_isgraph(int c);
-int	ft_islower(int c);
-int	ft_isprint(int c);
-int	ft_ispunct(int c);
-int	ft_isspace(int c);
-int	ft_isupper(int c);
-int	ft_isxdigit(int c);
+# include <unistd.h>
+
+void	ft_putchar_fd(int fd, char chr);
+void	ft_putendl_fd(int fd, const char *str);
+void	ft_putnbr_base_fd(int fd, long long nbr, const char *base);
+void	ft_putnbr_fd(int fd, long long nbr);
+void	ft_putstr_fd(int fd, const char *str);
 
 #endif

@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   putters.h                                          :+:      :+:    :+:   */
+/*   ft_stdlib.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 22:29:20 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:34:08 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/02/20 13:12:03 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUTTERS_H
-# define PUTTERS_H
+#ifndef FT_STDLIB_H
+# define FT_STDLIB_H
 
-# include <unistd.h>
+# include <stddef.h> 
+# include <stdlib.h>
 
-void	ft_putchar_fd(int fd, char chr);
-void	ft_putendl_fd(int fd, const char *str);
-void	ft_putnbr_base_fd(int fd, int nbr, const char *base);
-void	ft_putnbr_fd(int fd, int nbr);
-void	ft_putstr_fd(int fd, const char *str);
+int		ft_atoi(const char *nptr);
+
+void	*ft_calloc(size_t nmemb, size_t size);
+
+char	*ft_itoa(int n);
 
 #endif

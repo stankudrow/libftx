@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:47:16 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:47:16 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:52:43 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:52:44 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mem.h"
+#include "ft_mem.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

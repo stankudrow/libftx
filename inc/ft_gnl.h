@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_gnl.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/07 12:50:03 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 14:37:11 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:50:22 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:12:44 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef FT_GNL_H
+# define FT_GNL_H
 
-# include <stdbool.h>
+# include "ft_stdbool.h"
+# include "ft_stdlib.h"
 # include <unistd.h>
-# include <stdlib.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 4096
@@ -40,8 +40,8 @@ typedef struct s_fdb
 	char			buf[BUFFER_SIZE];
 	ssize_t			bpos;
 	ssize_t			nbytes;
-	bool			error;
-	bool			eof;
+	t_bool			error;
+	t_bool			eof;
 	struct s_fdb	*next;
 }	t_fdb;
 
@@ -50,8 +50,8 @@ typedef struct s_line
 	char	*buf;
 	size_t	len;
 	size_t	lpos;
-	bool	error;
-	bool	endl;
+	t_bool	error;
+	t_bool	endl;
 }	t_line;
 
 char	*get_next_line(int fd);
@@ -59,7 +59,7 @@ char	*get_next_line(int fd);
 t_line	*gnl_init_line(void);
 char	gnl_pop_char(t_fdb *from);
 void	gnl_push_char(t_line *to, char chr);
-void	*gnl_remalloc(void *ptr, size_t old, size_t new);
+void	*gnl_remalloc(void *ptr, size_t os, size_t ns);
 void	gnl_free_line(t_line *line);
 
 #endif

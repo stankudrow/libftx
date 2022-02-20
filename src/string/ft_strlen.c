@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:11:46 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/02 20:59:32 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:58:00 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:58:01 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string.h"
+#include "ft_string.h"
 
 size_t	ft_strlen(const char *s)
 {

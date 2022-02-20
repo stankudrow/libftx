@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:46:55 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:46:55 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:52:24 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:52:24 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mem.h"
+#include "ft_mem.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

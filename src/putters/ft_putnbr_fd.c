@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:17:16 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 20:01:12 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 15:04:54 by stanislav         #+#    #+#             */
+/*   Updated: 2022/02/20 15:04:54 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "putters.h"
+#include "ft_putters.h"
 
-void	ft_putnbr_fd(int fd, int nbr)
+void	ft_putnbr_fd(int fd, long long nbr)
 {
 	ft_putnbr_base_fd(fd, nbr, "0123456789");
 }

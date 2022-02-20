@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isxdigit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 23:43:17 by stanislav         #+#    #+#             */
-/*   Updated: 2022/01/20 23:43:18 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 12:17:51 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 12:17:52 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ctype.h"
+#include "ft_ctype.h"
 
 static int	ft_isaf_up(int c)
 {

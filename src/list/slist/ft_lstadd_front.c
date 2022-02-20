@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 22:31:29 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/01 20:44:33 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 13:07:23 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:07:24 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "list.h"
+#include "ft_slist.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *node)
 {
 	if (*lst)
-		new->next = *lst;
-	*lst = new;
+		node->next = *lst;
+	*lst = node;
 }

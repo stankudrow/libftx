@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   gnl.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/07 12:49:31 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/19 13:33:24 by stanislav        ###   ########.fr       */
+/*   Created: 2022/02/20 13:06:41 by mhorton           #+#    #+#             */
+/*   Updated: 2022/02/20 13:06:41 by mhorton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "ft_gnl.h"
 
 static void	release_fdb(t_fdb *fdb, t_fdb **fdblst)
 {
