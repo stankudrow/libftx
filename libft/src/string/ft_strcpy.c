@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
+/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/20 12:57:19 by mhorton           #+#    #+#             */
-/*   Updated: 2022/02/20 12:57:20 by mhorton          ###   ########.fr       */
+/*   Created: 2022/03/07 12:46:09 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/07 14:05:56 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+char	*ft_strcpy(char *dst, const char *src)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		(*f)(i, s + i);
-		i++;
-	}
+	ft_strlcpy(dst, src, ft_strlen(src) + 1);
+	return (dst);
 }

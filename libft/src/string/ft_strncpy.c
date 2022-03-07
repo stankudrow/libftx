@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/07 12:41:40 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/07 12:41:40 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/07 12:46:09 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/07 14:38:11 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strncpy(char *s1, const char *s2, size_t n)
 {
-	const unsigned char	*str1;
-	const unsigned char	*str2;
+	size_t	i;
 
-	if (!n)
-		return (0);
-	str1 = (unsigned char *) s1;
-	str2 = (unsigned char *) s2;
-	while (*str1 && *str2 && --n && *str1 == *str2)
+	i = 0;
+	while (i < n && s2[i])
 	{
-		str1++;
-		str2++;
+		s1[i] = s2[i];
+		i++;
 	}
-	return (*str1 - *str2);
+	while (i < n)
+	{
+		s1[i] = '\0';
+		i++;
+	}
+	return (s1);
 }

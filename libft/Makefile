@@ -6,7 +6,7 @@
 #    By: stanislav <student.21-school.ru>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/23 18:51:40 by stanislav         #+#    #+#              #
-#    Updated: 2022/02/23 22:00:39 by stanislav        ###   ########.fr        #
+#    Updated: 2022/03/07 14:18:12 by stanislav        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,10 +55,10 @@ stdlib_c := $(addprefix $(stdlib_d)/, $(stdlib_c))
 stdlib_h := ft_stdlib.h
 
 string_d := string
-string_c := ft_split.c ft_strchr.c ft_strdup.c ft_striteri.c \
-ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c \
-ft_strncmp.c ft_strndup.c ft_strnstr.c ft_strrchr.c ft_strspn.c \
-ft_strstr.c ft_strtrim.c ft_substr.c
+string_c := ft_split.c ft_strcat.c ft_strchr.c ft_strcmp.c ft_strcpy.c \
+ft_strdup.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncat.c \
+ft_strncmp.c ft_strndup.c ft_strnstr.c ft_strrchr.c ft_strspn.c ft_strstr.c \
+ft_strtrim.c ft_substr.c
 string_c := $(addprefix $(string_d)/, $(string_c))
 string_h := ft_string.h
 
@@ -70,7 +70,7 @@ OBJECTS := $(addprefix $(OBJ_D)/, $(SOURCES:.c=.o))
 
 # Compilation
 CC := cc
-CFLAGS := -Wall -Werror -Wextra -MMD
+CFLAGS := -Wall -Werror -Wextra -MMD -g
 
 # Commands
 RM := rm -rf
