@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 22:40:56 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/07 17:31:16 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/03/07 18:30:43 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,13 @@
 
 # include <stdlib.h>
 
-int		ft_atoi_base(const char *nptr, const char *base);
-int		ft_atoi(const char *nptr);
+int				ft_atoi_base(const char *nptr, const char *base);
+int				ft_atoi(const char *nptr);
+unsigned int	ft_atoui_base(const char *nptr, const char *base);
+unsigned int	ft_atoui(const char *nptr);
 
-void	*ft_calloc(size_t nmemb, size_t size);
+void			*ft_calloc(size_t nmemb, size_t size);
 
-char	*ft_itoa(int n);
+char			*ft_itoa(int n);
 
 #endif

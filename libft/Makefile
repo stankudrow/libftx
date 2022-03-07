@@ -6,7 +6,7 @@
 #    By: stanislav <student.21-school.ru>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/23 18:51:40 by stanislav         #+#    #+#              #
-#    Updated: 2022/03/07 14:18:12 by stanislav        ###   ########.fr        #
+#    Updated: 2022/03/07 18:14:55 by stanislav        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,8 @@ putters_h := ft_putters.h
 stdbool_h := ft_stdbool.h
 
 stdlib_d := stdlib
-stdlib_c := ft_atoi.c ft_calloc.c ft_itoa.c
+stdlib_c := ft_atoi_base.c ft_atoi.c ft_atoui_base.c ft_atoui.c \
+ft_calloc.c ft_itoa.c
 stdlib_c := $(addprefix $(stdlib_d)/, $(stdlib_c))
 stdlib_h := ft_stdlib.h
 

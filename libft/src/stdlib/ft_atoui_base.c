@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi_base.c                                     :+:      :+:    :+:   */
+/*   ft_atoui_base.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/22 01:56:42 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/07 18:16:30 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/03/07 18:30:03 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include "ft_stdlib.h"
 #include "ft_string.h"
 
+#define UL unsigned long
 #define UC unsigned char
 
 static t_bool	ft_is_valid_base(const char *base)
@@ -44,56 +45,40 @@ static t_bool	ft_is_valid_base(const char *base)
 	return (True);
 }
 
-static void	ft_skip(const char **nptr, char *sign)
+static void	ft_skip(const char **nptr)
 {
 	while (ft_isspace(**nptr))
 		(*nptr)++;
-	if (**nptr == '-' || **nptr == '+')
-	{
-		if (**nptr == '-')
-			*sign = -1;
+	if (**nptr == '+')
 		(*nptr)++;
-	}
 }
 
 // nbr is always a positive number while in the loop of ft_atoi
-static int	ft_isoverflow(long nbr, UC digit, UC nbase, char sign)
+static int	ft_isoverflow(UL nbr, UC digit, UC nbase)
 {
-	if (sign < 0)
-		return ((LONG_MIN / nbase > nbr) || \
-				(LONG_MIN + digit > -nbase * nbr));
-	if (sign > 0)
-		return ((LONG_MAX / nbase < nbr) || \
-				(LONG_MAX - digit < nbase * nbr));
-	return (-1);
+	return ((ULONG_MAX / nbase < nbr) || (ULONG_MAX - digit < nbase * nbr));
 }
 
 // libft-unit-test - that is why such an implementation
 // not for push_swap project
-int	ft_atoi_base(const char *nptr, const char *base)
+unsigned int	ft_atoui_base(const char *nptr, const char *base)
 {
-	long			nbr;
-	char			sign;
-	size_t			nbase;
-	unsigned char	digit;
+	UL		nbr;
+	size_t	nbase;
+	UC		digit;
 
 	if (!ft_is_valid_base(base))
 		return (0);
 	nbase = ft_strlen(base);
-	sign = 1;
 	nbr = 0;
-	ft_skip(&nptr, &sign);
+	ft_skip(&nptr);
 	while (*nptr && ft_strchr(base, *nptr))
 	{
 		digit = ft_strchr(base, *nptr) - base;
-		if (ft_isoverflow(nbr, digit, nbase, sign))
-		{
-			if (sign == 1)
-				return (-1);
+		if (ft_isoverflow(nbr, digit, nbase))
 			return (0);
-		}
 		nbr = nbase * nbr + (digit % nbase);
 		nptr++;
 	}
-	return (sign * nbr);
+	return (nbr);
 }
