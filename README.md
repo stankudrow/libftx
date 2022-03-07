@@ -11,3 +11,4 @@ https://medium.com/heuristics/c-application-development-part-1-project-structure
 # Другие проекты
 
 * https://github.com/jraleman/open-libft
+* https://github.com/Abzwingten/libft
