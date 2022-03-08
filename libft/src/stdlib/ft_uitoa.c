@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_uitoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 21:45:25 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/08 12:36:34 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/03/08 17:01:43 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_stdlib.h"
 
-char	*ft_itoa(int nbr)
+char	*ft_uitoa(unsigned int unbr)
 {
-	return (ft_itoa_base(nbr, "0123456789"));
+	return (ft_uitoa_base(unbr, "0123456789"));
 }
