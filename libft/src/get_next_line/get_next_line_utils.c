@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/20 13:06:46 by mhorton           #+#    #+#             */
-/*   Updated: 2022/02/23 18:50:50 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/08 22:57:08 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/08 22:57:08 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,23 +74,23 @@ void	gnl_push_char(t_line *to, char chr)
 		to->endl = true;
 }
 
-// realloc + memmove (with memcpy)
-void	*gnl_remalloc(void *ptr, size_t os, size_t ns)
+// realloc + memove (with memcpy)
+void	*gnl_remalloc(void *ptr, size_t old, size_t new)
 {
 	void			*newptr;
 	unsigned char	*dst;
 	unsigned char	*src;
 
-	newptr = malloc(ns);
+	newptr = malloc(new);
 	if (!(ptr && newptr))
 		return (newptr);
 	dst = newptr;
 	src = ptr;
 	if (src < dst)
-		while (os--)
-			dst[os] = src[os];
+		while (old--)
+			dst[old] = src[old];
 	if (src > dst)
-		while (os--)
+		while (old--)
 			*dst++ = *src++;
 	return (newptr);
 }

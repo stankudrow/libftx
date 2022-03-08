@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/21 22:43:19 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/23 18:26:25 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/08 22:57:24 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/08 22:57:25 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@
 typedef struct s_fdb
 {
 	int				fd;
-	char			buf[BUFFER_SIZE];
+	char			*buf;
 	ssize_t			bpos;
 	ssize_t			nbytes;
 	bool			error;
@@ -59,7 +59,7 @@ char	*get_next_line(int fd);
 t_line	*gnl_init_line(void);
 char	gnl_pop_char(t_fdb *from);
 void	gnl_push_char(t_line *to, char chr);
-void	*gnl_remalloc(void *ptr, size_t os, size_t ns);
+void	*gnl_remalloc(void *ptr, size_t old, size_t new);
 void	gnl_free_line(t_line *line);
 
 #endif
