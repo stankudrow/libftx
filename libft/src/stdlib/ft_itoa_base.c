@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 21:45:25 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/08 17:14:49 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/03/13 10:09:11 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include "ft_stdbool.h"
 #include "ft_stdlib.h"
 #include "ft_string.h"
-
 
 static t_bool	ft_is_valid_base(const char *base)
 {
