@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_slist_add_front.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
+/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/20 13:07:08 by mhorton           #+#    #+#             */
-/*   Updated: 2022/02/20 13:07:08 by mhorton          ###   ########.fr       */
+/*   Created: 2022/03/22 19:22:39 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/22 19:48:50 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_slist.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *node)
+void	ft_slist_add_front(t_slist **lst, t_slist *node)
 {
-	t_list	*last;
-
 	if (*lst)
-	{
-		last = ft_lstlast(*lst);
-		last->next = node;
-	}
-	else
-		*lst = node;
+		node->next = *lst;
+	*lst = node;
 }

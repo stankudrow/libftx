@@ -6,7 +6,7 @@
 #    By: stanislav <student.21-school.ru>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/23 18:51:40 by stanislav         #+#    #+#              #
-#    Updated: 2022/03/08 17:08:15 by stanislav        ###   ########.fr        #
+#    Updated: 2022/03/22 20:32:10 by stanislav        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,8 +30,9 @@ get_next_line_h := get_next_line.h
 
 list_d := list
 slist_d := $(list_d)/slist
-slist_c := ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
-ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c
+slist_c := ft_slist_add_back.c ft_slist_add_front.c ft_slist_clear.c \
+ft_slist_delone.c ft_slist_iter.c ft_slist_last.c \
+ft_slist_map.c ft_slist_new.c ft_slist_size.c
 slist_c := $(addprefix $(slist_d)/, $(slist_c))
 slist_h := ft_slist.h
 
@@ -46,6 +47,12 @@ putters_c := ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 ft_putnbr_base_fd.c ft_putnbr_fd.c ft_putunbr_base_fd.c ft_putunbr_fd.c
 putters_c := $(addprefix $(putters_d)/, $(putters_c))
 putters_h := ft_putters.h
+
+stack_d := stack
+stack_c := ft_stack_clear.c ft_stack_delone.c ft_stack_new.c \
+ft_stack_peek.c ft_stack_pop.c ft_stack_push.c ft_stack_size.c
+stack_c := $(addprefix $(stack_d)/, $(stack_c))
+stack_h := ft_stack.h
 
 stdbool_h := ft_stdbool.h
 
@@ -64,9 +71,10 @@ string_c := $(addprefix $(string_d)/, $(string_c))
 string_h := ft_string.h
 
 # Files
-HEADERS := $(addprefix $(INC_D)/, $(ctype_h) $(get_next_line_h) $(slist_h) \
-$(mem_h) $(putters_h) $(stdlib_h) $(string_h) $(stdbool_h))
-SOURCES := $(ctype_c) $(get_next_line_c) $(slist_c) $(mem_c) $(putters_c) $(stdlib_c) $(string_c)
+HEADERS := $(addprefix $(INC_D)/, $(ctype_h) $(get_next_line_h) $(mem_h) $(putters_h) \
+$(slist_h) $(stack_h) $(stdbool_h) $(stdlib_h) $(string_h))
+SOURCES := $(ctype_c) $(get_next_line_c) $(mem_c) $(putters_c) $(slist_c) \
+$(stack_c) $(stdlib_c) $(string_c)
 OBJECTS := $(addprefix $(OBJ_D)/, $(SOURCES:.c=.o))
 
 # Compilation

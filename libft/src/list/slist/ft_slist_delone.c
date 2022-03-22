@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_slist_delone.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
+/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/20 12:21:49 by mhorton           #+#    #+#             */
-/*   Updated: 2022/02/20 13:07:42 by mhorton          ###   ########.fr       */
+/*   Created: 2022/03/22 19:23:30 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/22 19:49:02 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_slist.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_slist_delone(t_slist *lst, void (*del)(void *))
 {
-	while (lst)
-	{
-		(*f)(lst->content);
-		lst = lst->next;
-	}
+	(*del)(lst->content);
+	free(lst);
 }

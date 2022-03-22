@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 22:43:41 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/21 22:43:41 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/03/22 19:51:10 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,20 @@
 
 # include "ft_stdlib.h"
 
-typedef struct s_list
+typedef struct s_slist
 {
 	void			*content;
-	struct s_list	*next;
-}	t_list;
+	struct s_slist	*next;
+}	t_slist;
 
-void	ft_lstadd_back(t_list **lst, t_list *node);
-void	ft_lstadd_front(t_list **lst, t_list *node);
-void	ft_lstclear(t_list **lst, void (*del)(void *));
-void	ft_lstdelone(t_list *lst, void (*del)(void *));
-void	ft_lstiter(t_list *lst, void (*f)(void *));
-t_list	*ft_lstlast(t_list *lst);
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-t_list	*ft_lstnew(void *content);
-int		ft_lstsize(t_list *lst);
+void	ft_slist_add_back(t_slist **lst, t_slist *node);
+void	ft_slist_add_front(t_slist **lst, t_slist *node);
+void	ft_slist_clear(t_slist **lst, void (*del)(void *));
+void	ft_slist_delone(t_slist *lst, void (*del)(void *));
+void	ft_slist_iter(t_slist *lst, void (*f)(void *));
+t_slist	*ft_slist_last(t_slist *lst);
+t_slist	*ft_slist_map(t_slist *lst, void *(*f)(void *), void (*del)(void *));
+t_slist	*ft_slist_new(void *content);
+size_t	ft_slist_size(t_slist *lst);
 
 #endif

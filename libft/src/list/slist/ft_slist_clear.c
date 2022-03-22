@@ -1,19 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_slist_clear.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
+/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/20 12:21:56 by mhorton           #+#    #+#             */
-/*   Updated: 2022/02/20 13:07:38 by mhorton          ###   ########.fr       */
+/*   Created: 2022/03/22 19:23:17 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/22 19:50:25 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_slist.h"
 
-void	ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_slist_clear(t_slist **lst, void (*del)(void *))
 {
-	(*del)(lst->content);
-	free(lst);
+	t_slist	*node;
+
+	while (*lst)
+	{
+		node = *lst;
+		*lst = (*lst)->next;
+		ft_slist_delone(node, del);
+		node = NULL;
+	}
 }

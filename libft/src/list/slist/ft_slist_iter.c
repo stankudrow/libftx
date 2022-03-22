@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_slist_iter.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
+/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/20 13:07:23 by mhorton           #+#    #+#             */
-/*   Updated: 2022/02/20 13:07:24 by mhorton          ###   ########.fr       */
+/*   Created: 2022/03/22 19:23:43 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/22 19:56:08 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_slist.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *node)
+void	ft_slist_iter(t_slist *lst, void (*f)(void *))
 {
-	if (*lst)
-		node->next = *lst;
-	*lst = node;
+	(void)(*lst);
+	while (lst)
+	{
+		(*f)(lst->content);
+		lst = lst->next;
+	}
 }

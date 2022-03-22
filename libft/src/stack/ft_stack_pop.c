@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_stack_pop.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
+/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/20 12:21:21 by mhorton           #+#    #+#             */
-/*   Updated: 2022/02/20 13:08:01 by mhorton          ###   ########.fr       */
+/*   Created: 2022/03/22 19:22:47 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/22 20:29:45 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_slist.h"
+#include "ft_stack.h"
 
-int	ft_lstsize(t_list *lst)
+t_stack	*ft_stack_pop(t_stack **stk)
 {
-	int	size;
+	t_stack	*node;
 
-	size = 0;
-	while (lst)
-	{
-		lst = lst->next;
-		size++;
-	}
-	return (size);
+	node = *stk;
+	*stk = node->next;
+	return (node);
 }

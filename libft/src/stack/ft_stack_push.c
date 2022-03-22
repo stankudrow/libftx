@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_stack_push.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhorton <mhorton@student.42.fr>            +#+  +:+       +#+        */
+/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/20 12:22:04 by mhorton           #+#    #+#             */
-/*   Updated: 2022/02/20 13:07:32 by mhorton          ###   ########.fr       */
+/*   Created: 2022/03/22 19:22:39 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/22 20:00:27 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_slist.h"
+#include "ft_stack.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_stack_push(t_stack **stk, t_stack *node)
 {
-	t_list	*node;
-
-	while (*lst)
-	{
-		node = *lst;
-		*lst = (*lst)->next;
-		ft_lstdelone(node, del);
-		node = NULL;
-	}
+	ft_slist_add_front(stk, node);
 }
