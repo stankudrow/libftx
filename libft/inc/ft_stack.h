@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_stack.h                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/22 20:42:07 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/22 22:11:20 by stanislav        ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FT_STACK_H
 # define FT_STACK_H
 
@@ -5,16 +17,7 @@
 
 typedef t_slist	t_stack;
 
-/*
-void	ft_slstadd_back(t_slist **lst, t_slist *node);
-void	ft_slstadd_front(t_slist **lst, t_slist *node);
-void	ft_slstclear(t_slist **lst, void (*del)(void *));
-void	ft_slstdelone(t_slist *lst, void (*del)(void *));
-void	ft_slstiter(t_slist *lst, void (*f)(void *));
-t_slist	*ft_slstlast(t_slist *lst);
-t_slist	*ft_slstmap(t_slist *lst, void *(*f)(void *), void (*del)(void *));
-t_slist	*ft_slstnew(void *content);
-*/
+void	ft_stack_clear(t_stack **stk, void (*del)(void *));
 void	ft_stack_delone(t_stack *stk, void (*del)(void *));
 t_stack	*ft_stack_new(void *content);
 t_stack	*ft_stack_peek(t_stack *stk);
