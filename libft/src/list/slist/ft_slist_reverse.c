@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_slist_add_back.c                                :+:      :+:    :+:   */
+/*   ft_slist_reverse.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/25 00:22:07 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/25 00:22:07 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/25 00:19:55 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/25 00:19:55 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_slist.h"
 
-void	ft_slist_add_back(t_slist **lst, t_slist *node)
+void	ft_slist_reverse(t_slist **lst)
 {
-	t_slist	*last;
+	t_slist	*new;
+	t_slist	*tmp;
 
-	if (*lst)
+	new = NULL;
+	while (*lst)
 	{
-		last = ft_slist_last(*lst);
-		last->next = node;
+		tmp = *lst;
+		*lst = (*lst)->next;
+		tmp->next = NULL;
+		ft_slist_add_front(&new, tmp);
 	}
-	else
-		*lst = node;
+	*lst = new;
 }

@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_slist_add_back.c                                :+:      :+:    :+:   */
+/*   ft_slist_popleft.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/25 00:22:07 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/25 00:22:07 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/25 00:20:06 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/25 00:20:06 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_slist.h"
 
-void	ft_slist_add_back(t_slist **lst, t_slist *node)
+t_slist	*ft_slist_popleft(t_slist **lst)
 {
-	t_slist	*last;
+	t_slist	*first;
 
 	if (*lst)
 	{
-		last = ft_slist_last(*lst);
-		last->next = node;
+		first = *lst;
+		*lst = first->next;
+		first->next = NULL;
+		return (first);
 	}
-	else
-		*lst = node;
+	return (NULL);
 }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 19:24:22 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/22 19:55:11 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/25 00:20:38 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/25 00:20:39 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ t_slist	*ft_slist_map(t_slist *lst, void *(*f)(void *), void (*del)(void *))
 	t_slist	*newlst;
 	t_slist	*node;
 
-	(void)(*lst);
 	newlst = NULL;
 	while (lst)
 	{

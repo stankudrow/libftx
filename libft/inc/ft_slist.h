@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/21 22:43:41 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/22 19:51:10 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/25 00:15:43 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/25 00:15:43 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,9 @@ void	ft_slist_iter(t_slist *lst, void (*f)(void *));
 t_slist	*ft_slist_last(t_slist *lst);
 t_slist	*ft_slist_map(t_slist *lst, void *(*f)(void *), void (*del)(void *));
 t_slist	*ft_slist_new(void *content);
+t_slist	*ft_slist_pop(t_slist **lst);
+t_slist	*ft_slist_popleft(t_slist **lst);
+void	ft_slist_reverse(t_slist **lst);
 size_t	ft_slist_size(t_slist *lst);
 
 #endif

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 19:23:17 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/22 19:50:25 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/25 00:21:42 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/25 00:21:42 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,5 @@ void	ft_slist_clear(t_slist **lst, void (*del)(void *))
 		ft_slist_delone(node, del);
 		node = NULL;
 	}
+	*lst = NULL;
 }

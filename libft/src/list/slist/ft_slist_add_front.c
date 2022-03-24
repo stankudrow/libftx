@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 19:22:39 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/22 19:48:50 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/25 00:21:54 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/25 00:21:54 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 
 void	ft_slist_add_front(t_slist **lst, t_slist *node)
 {
+	t_slist	*last;
+
 	if (*lst)
-		node->next = *lst;
+	{
+		last = ft_slist_last(node);
+		last->next = *lst;
+	}
 	*lst = node;
 }
