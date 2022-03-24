@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 22:43:12 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/21 22:43:12 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/03/25 00:38:45 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,7 @@ int	ft_ispunct(int c);
 int	ft_isspace(int c);
 int	ft_isupper(int c);
 int	ft_isxdigit(int c);
+int	ft_tolower(int c);
+int	ft_toupper(int c);
 
 #endif
