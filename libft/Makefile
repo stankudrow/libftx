@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: stanislav <student.21-school.ru>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/23 18:51:40 by stanislav         #+#    #+#              #
-#    Updated: 2022/03/22 20:32:10 by stanislav        ###   ########.fr        #
+#    Created: 2022/03/25 00:17:09 by stanislav         #+#    #+#              #
+#    Updated: 2022/03/25 00:17:09 by stanislav        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,13 +28,26 @@ get_next_line_c := get_next_line.c get_next_line_utils.c
 get_next_line_c := $(addprefix $(get_next_line_d)/, $(get_next_line_c))
 get_next_line_h := get_next_line.h
 
+# lists start
 list_d := list
+
+dlist_d := $(list_d)/dlist
+dlist_c := ft_dlist_add_back.c ft_dlist_add_front.c ft_dlist_clear.c \
+ft_dlist_delone.c ft_dlist_iter.c ft_dlist_last.c ft_dlist_map.c \
+ft_dlist_new.c ft_dlist_pop.c ft_dlist_popleft.c ft_dlist_reverse.c ft_dlist_size.c
+dlist_c := $(addprefix $(dlist_d)/, $(dlist_c))
+dlist_h := ft_dlist.h
+
 slist_d := $(list_d)/slist
 slist_c := ft_slist_add_back.c ft_slist_add_front.c ft_slist_clear.c \
-ft_slist_delone.c ft_slist_iter.c ft_slist_last.c \
-ft_slist_map.c ft_slist_new.c ft_slist_size.c
+ft_slist_delone.c ft_slist_iter.c ft_slist_last.c ft_slist_map.c \
+ft_slist_new.c ft_slist_pop.c ft_slist_popleft.c ft_slist_reverse.c ft_slist_size.c
 slist_c := $(addprefix $(slist_d)/, $(slist_c))
 slist_h := ft_slist.h
+
+lists_c := $(dlist_c) $(slist_c)
+
+# lists end
 
 mem_d := mem
 mem_c := ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
@@ -73,7 +86,7 @@ string_h := ft_string.h
 # Files
 HEADERS := $(addprefix $(INC_D)/, $(ctype_h) $(get_next_line_h) $(mem_h) $(putters_h) \
 $(slist_h) $(stack_h) $(stdbool_h) $(stdlib_h) $(string_h))
-SOURCES := $(ctype_c) $(get_next_line_c) $(mem_c) $(putters_c) $(slist_c) \
+SOURCES := $(ctype_c) $(get_next_line_c) $(mem_c) $(putters_c) $(lists_c) \
 $(stack_c) $(stdlib_c) $(string_c)
 OBJECTS := $(addprefix $(OBJ_D)/, $(SOURCES:.c=.o))
 
