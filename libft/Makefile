@@ -6,7 +6,7 @@
 #    By: stanislav <student.21-school.ru>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 00:17:09 by stanislav         #+#    #+#              #
-#    Updated: 2022/03/25 00:17:09 by stanislav        ###   ########.fr        #
+#    Updated: 2022/03/25 10:48:47 by stanislav        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,13 @@ get_next_line_h := get_next_line.h
 # lists start
 list_d := list
 
+cslist_d := $(list_d)/cslist
+cslist_c := ft_cslist_add_back.c ft_cslist_add_front.c ft_cslist_clear.c \
+ft_cslist_delone.c ft_cslist_iter.c ft_cslist_last.c ft_cslist_map.c \
+ft_cslist_new.c ft_cslist_pop.c ft_cslist_popleft.c ft_cslist_reverse.c ft_cslist_size.c
+cslist_c := $(addprefix $(cslist_d)/, $(cslist_c))
+cslist_h := ft_cslist.h
+
 dlist_d := $(list_d)/dlist
 dlist_c := ft_dlist_add_back.c ft_dlist_add_front.c ft_dlist_clear.c \
 ft_dlist_delone.c ft_dlist_iter.c ft_dlist_last.c ft_dlist_map.c \
@@ -45,7 +52,7 @@ ft_slist_new.c ft_slist_pop.c ft_slist_popleft.c ft_slist_reverse.c ft_slist_siz
 slist_c := $(addprefix $(slist_d)/, $(slist_c))
 slist_h := ft_slist.h
 
-lists_c := $(dlist_c) $(slist_c)
+lists_c := $(cslist_c) $(dlist_c) $(slist_c)
 
 # lists end
 
