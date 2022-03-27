@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/24 18:12:23 by mhorton           #+#    #+#             */
-/*   Updated: 2022/03/26 11:24:57 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/28 01:46:10 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/28 01:46:10 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ t_cslist	*ft_cslist_popleft(t_cslist **lst)
 			*lst = first->next;
 			last->next = *lst;
 		}
-		first->next = first;
+		//first->next = first;
 		return (first);
 	}
 	return (NULL);
