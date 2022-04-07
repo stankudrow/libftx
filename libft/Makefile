@@ -6,7 +6,7 @@
 #    By: stanislav <student.21-school.ru>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 00:17:09 by stanislav         #+#    #+#              #
-#    Updated: 2022/03/28 02:00:10 by stanislav        ###   ########.fr        #
+#    Updated: 2022/04/07 21:58:04 by stanislav        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -93,7 +93,7 @@ string_d := string
 string_c := ft_split.c ft_strcat.c ft_strchr.c ft_strcmp.c ft_strcpy.c \
 ft_strdup.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncat.c \
 ft_strncmp.c ft_strndup.c ft_strnstr.c ft_strrchr.c ft_strspn.c ft_strstr.c \
-ft_strtrim.c ft_substr.c
+ft_strtrim.c ft_strtrim_left.c ft_strtrim_right.c ft_substr.c
 string_c := $(addprefix $(string_d)/, $(string_c))
 string_h := ft_string.h
 

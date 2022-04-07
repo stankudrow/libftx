@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 22:40:33 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/07 13:08:36 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/07 21:47:25 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ char	*ft_strstr(const char *haystack, const char *needle);
 
 char	**ft_split(char const *s, char c);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim_left(char const *s1, char const *set);
+char	*ft_strtrim_right(char const *s1, char const *set);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, size_t start, size_t len);
 

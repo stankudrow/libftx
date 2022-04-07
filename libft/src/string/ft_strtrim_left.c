@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim_left.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/07 22:04:18 by stanislav         #+#    #+#             */
-/*   Updated: 2022/04/07 22:04:49 by stanislav        ###   ########.fr       */
+/*   Created: 2022/04/07 21:45:18 by stanislav         #+#    #+#             */
+/*   Updated: 2022/04/07 22:05:26 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,10 @@ static t_bool	ft_isinset(char c, const char *set)
 	return (False);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim_left(char const *s1, char const *set)
 {
 	char		*str;
 	const char	*start;
-	const char	*end;
 	size_t		span;
 
 	while (ft_isinset(*s1, set))
@@ -36,11 +35,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = s1;
 	while (*s1)
 		s1++;
-	s1--;
-	while (ft_isinset(*s1, set) && start < s1)
-		s1--;
-	end = s1;
-	span = end - start + 1; // without 1?????????
+	span = s1 - start;
 	str = ft_calloc(span + 1, sizeof(char));
 	if (str)
 		ft_memmove(str, start, span);
