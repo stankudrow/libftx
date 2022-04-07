@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 01:46:10 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/28 01:46:10 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/03 12:06:07 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ t_cslist	*ft_cslist_popleft(t_cslist **lst)
 			*lst = first->next;
 			last->next = *lst;
 		}
-		//first->next = first;
 		return (first);
 	}
 	return (NULL);

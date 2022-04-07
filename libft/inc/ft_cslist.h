@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 10:40:59 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/25 10:41:49 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/07 19:54:03 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 typedef struct s_cslist
 {
-	void			*content;
+	void			*data;
 	struct s_cslist	*next;
 }	t_cslist;
 
@@ -28,7 +28,7 @@ void		ft_cslist_delone(t_cslist *lst, void (*del)(void *));
 void		ft_cslist_iter(t_cslist *lst, void (*f)(void *));
 t_cslist	*ft_cslist_last(t_cslist *lst);
 t_cslist	*ft_cslist_map(t_cslist *l, void *(*f)(void *), void (*d)(void *));
-t_cslist	*ft_cslist_new(void *content);
+t_cslist	*ft_cslist_new(void *data);
 t_cslist	*ft_cslist_pop(t_cslist **lst);
 t_cslist	*ft_cslist_popleft(t_cslist **lst);
 void		ft_cslist_reverse(t_cslist **lst);

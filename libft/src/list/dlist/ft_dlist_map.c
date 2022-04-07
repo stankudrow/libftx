@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 01:22:14 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/25 01:22:14 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/07 19:52:56 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_dlist	*ft_dlist_map(t_dlist *lst, void *(*f)(void *), void (*del)(void *))
 	newlst = NULL;
 	while (lst)
 	{
-		node = ft_dlist_new((*f)(lst->content));
+		node = ft_dlist_new((*f)(lst->data));
 		if (!node)
 		{
 			ft_dlist_clear(&newlst, del);

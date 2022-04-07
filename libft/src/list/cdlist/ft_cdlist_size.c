@@ -1,25 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_slist_add_front.c                               :+:      :+:    :+:   */
+/*   ft_cdlist_size.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/25 00:21:54 by stanislav         #+#    #+#             */
-/*   Updated: 2022/04/07 19:27:09 by stanislav        ###   ########.fr       */
+/*   Created: 2022/03/26 11:59:44 by stanislav         #+#    #+#             */
+/*   Updated: 2022/03/27 13:57:21 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_slist.h"
+#include "ft_cdlist.h"
 
-void	ft_slist_add_front(t_slist **lst, t_slist *node)
+size_t	ft_cdlist_size(t_cdlist *lst)
 {
-	t_slist	*last;
+	size_t		size;
+	t_cdlist	*head;
+	t_cdlist	*tail;
 
-	if (*lst)
+	size = 0;
+	if (lst)
 	{
-		last = ft_slist_last(node);
-		last->next = *lst;
+		size = 1;
+		head = lst;
+		tail = lst->prev;
+		while (head != tail)
+		{
+			head = head->next;
+			size++;
+			if (head == tail)
+				break ;
+			tail = tail->prev;
+			size++;
+		}
 	}
-	*lst = node;
+	return (size);
 }

@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 00:15:53 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/25 10:25:37 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/07 19:23:58 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 typedef struct s_dlist
 {
-	void			*content;
+	void			*data;
 	struct s_dlist	*prev;
 	struct s_dlist	*next;
 }	t_dlist;
@@ -29,7 +29,7 @@ void	ft_dlist_delone(t_dlist *lst, void (*del)(void *));
 void	ft_dlist_iter(t_dlist *lst, void (*f)(void *));
 t_dlist	*ft_dlist_last(t_dlist *lst);
 t_dlist	*ft_dlist_map(t_dlist *lst, void *(*f)(void *), void (*del)(void *));
-t_dlist	*ft_dlist_new(void *content);
+t_dlist	*ft_dlist_new(void *data);
 t_dlist	*ft_dlist_pop(t_dlist **lst);
 t_dlist	*ft_dlist_popleft(t_dlist **lst);
 void	ft_dlist_reverse(t_dlist **lst);
