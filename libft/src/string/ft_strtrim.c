@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 22:04:18 by stanislav         #+#    #+#             */
-/*   Updated: 2022/04/07 22:04:49 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/11 18:28:11 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (ft_isinset(*s1, set) && start < s1)
 		s1--;
 	end = s1;
-	span = end - start + 1; // without 1?????????
+	span = end - start + 1;
 	str = ft_calloc(span + 1, sizeof(char));
 	if (str)
 		ft_memmove(str, start, span);
