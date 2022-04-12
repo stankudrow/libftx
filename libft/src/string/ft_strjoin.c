@@ -6,22 +6,23 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 21:45:47 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/23 21:45:48 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/12 22:11:50 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
+#include "ft_stdbool.h"
 
-static int	ft_ismemoverflow(size_t len1, size_t len2)
+static t_bool	ft_ismemoverflow(size_t len1, size_t len2)
 {
 	size_t	max;
 
 	max = -1;
 	if ((len1 > max - 1) || (len2 > max - 1))
-		return (1);
+		return (True);
 	if (max - (len1 + 1) < len2)
-		return (1);
-	return (0);
+		return (True);
+	return (False);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -42,5 +43,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	return (str);
 }
-// ft_strlcat(str, s2, len1 + len2 + 1) -> ft_strlcpy(str + len1, s2, len2 + 1);
-// ft_strlcpy(str, s1, len1 + 1); -> ft_memove(str, s1, len1 + 1);
+/*
+ft_strlcat(str, s2, len1 + len2 + 1) -> ft_strlcpy(str + len1, s2, len2 + 1);
+ft_strlcpy(str, s1, len1 + 1); -> ft_memmove(str, s1, len1 + 1);
+*/
