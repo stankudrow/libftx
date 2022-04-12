@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 22:43:26 by stanislav         #+#    #+#             */
-/*   Updated: 2022/02/23 20:24:10 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/12 22:18:47 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memjoin(const void *dst, size_t m, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t n);
 void	*ft_memrchr(const void *s, int c, size_t n);
 void	*ft_memset(void *s, int c, size_t n);

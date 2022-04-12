@@ -6,7 +6,7 @@
 #    By: stanislav <student.21-school.ru>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 00:17:09 by stanislav         #+#    #+#              #
-#    Updated: 2022/04/07 21:58:04 by stanislav        ###   ########.fr        #
+#    Updated: 2022/04/12 22:20:47 by stanislav        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ lists_c := $(cdlist_c) $(cslist_c) $(dlist_c) $(slist_c)
 
 mem_d := mem
 mem_c := ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
-ft_memmove.c ft_memrchr.c ft_memset.c
+ft_memjoin.c ft_memmove.c ft_memrchr.c ft_memset.c
 mem_c := $(addprefix $(mem_d)/, $(mem_c))
 mem_h := ft_mem.h
 
