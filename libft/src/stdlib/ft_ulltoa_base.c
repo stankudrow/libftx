@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 21:39:45 by stanislav         #+#    #+#             */
-/*   Updated: 2022/04/14 21:42:53 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/14 21:44:35 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static t_bool	ft_is_valid_base(const char *base)
 }
 
 /* base should be checked before and has no 0, 1 values */
-static UI	ft_get_numlen(ULL unbr, int nbase)
+static ULL	ft_get_numlen(ULL unbr, int nbase)
 {
 	ULL	len;
 
