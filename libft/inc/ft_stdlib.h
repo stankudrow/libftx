@@ -6,7 +6,7 @@
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 22:40:56 by stanislav         #+#    #+#             */
-/*   Updated: 2022/03/08 17:07:15 by stanislav        ###   ########.fr       */
+/*   Updated: 2022/04/14 21:33:36 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,9 @@ char	*ft_itoa_base(int nbr, const char *base);
 char	*ft_itoa(int n);
 char	*ft_uitoa_base(unsigned int unbr, const char *base);
 char	*ft_uitoa(unsigned int unbr);
+char	*ft_ultoa_base(unsigned long unbr, const char *base);
+char	*ft_ultoa(unsigned long unbr);
+char	*ft_ulltoa_base(unsigned long long unbr, const char *base);
+char	*ft_ulltoa(unsigned long long unbr);
 
 #endif

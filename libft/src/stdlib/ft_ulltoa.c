@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_uitoa.c                                         :+:      :+:    :+:   */
+/*   ft_ulltoa.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stanislav <student.21-school.ru>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/14 21:37:58 by stanislav         #+#    #+#             */
-/*   Updated: 2022/04/14 21:37:59 by stanislav        ###   ########.fr       */
+/*   Created: 2022/04/14 21:35:53 by stanislav         #+#    #+#             */
+/*   Updated: 2022/04/14 21:35:53 by stanislav        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_stdlib.h"
 
-char	*ft_uitoa(unsigned int unbr)
+char	*ft_ulltoa(unsigned long long unbr)
 {
-	return (ft_uitoa_base(unbr, "0123456789"));
+	return (ft_ulltoa_base(unbr, "0123456789"));
 }
