@@ -6,7 +6,7 @@
 #    By: stanislav <student.21-school.ru>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 00:17:09 by stanislav         #+#    #+#              #
-#    Updated: 2022/04/14 21:42:23 by stanislav        ###   ########.fr        #
+#    Updated: 2022/04/18 01:05:51 by stanislav        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,7 +85,8 @@ stdbool_h := ft_stdbool.h
 
 stdlib_d := stdlib
 stdlib_c := ft_atoi_base.c ft_atoi.c ft_atoui_base.c ft_atoui.c \
-ft_calloc.c ft_itoa_base.c ft_itoa.c ft_uitoa_base.c ft_uitoa.c \
+ft_calloc.c ft_itoa_base.c ft_itoa.c ft_lltoa_base.c ft_lltoa.c \
+ft_ltoa_base.c ft_ltoa.c ft_uitoa_base.c ft_uitoa.c \
 ft_ulltoa_base.c ft_ulltoa.c ft_ultoa_base.c ft_ultoa.c
 stdlib_c := $(addprefix $(stdlib_d)/, $(stdlib_c))
 stdlib_h := ft_stdlib.h
